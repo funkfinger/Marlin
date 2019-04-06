@@ -396,9 +396,9 @@
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
 // Ultimaker
-#define DEFAULT_Kp 22.2
-#define DEFAULT_Ki 1.08
-#define DEFAULT_Kd 114
+// #define DEFAULT_Kp 22.2
+// #define DEFAULT_Ki 1.08
+// #define DEFAULT_Kd 114
 
 // MakerGear
 //#define DEFAULT_Kp 7.0
@@ -413,13 +413,13 @@
 ////// MY SETTINGS ///////
 // ANET A8 Standard Extruder at 210 Degree Celsius and 100% Fan
 //(measured after M106 S255 with M303 E0 S210 C8)
-// #define  DEFAULT_Kp 21.0
-// #define  DEFAULT_Ki 1.25
-// #define  DEFAULT_Kd 86.0
+#define  DEFAULT_Kp 26.44
+#define  DEFAULT_Ki 1.99
+#define  DEFAULT_Kd 87.72
 // ANET wrapped heater block values...
-#define DEFAULT_Kp 65.22
-#define DEFAULT_Ki 3.88
-#define DEFAULT_Kd 273.84
+// #define DEFAULT_Kp 65.22
+// #define DEFAULT_Ki 3.88
+// #define DEFAULT_Kd 273.84
 
 #endif // PIDTEMP
 
@@ -916,7 +916,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 220
+#define X_BED_SIZE 215
 #define Y_BED_SIZE 220
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1156,12 +1156,12 @@
  * Override if the automatically selected points are inadequate.
  */
 #if ENABLED(AUTO_BED_LEVELING_3POINT) || ENABLED(AUTO_BED_LEVELING_UBL)
-//#define PROBE_PT_1_X 15
-//#define PROBE_PT_1_Y 180
-//#define PROBE_PT_2_X 15
-//#define PROBE_PT_2_Y 20
-//#define PROBE_PT_3_X 170
-//#define PROBE_PT_3_Y 20
+  #define PROBE_PT_1_X 20
+  #define PROBE_PT_1_Y 20
+  #define PROBE_PT_2_X 170
+  #define PROBE_PT_2_Y 100
+  #define PROBE_PT_3_X 80
+  #define PROBE_PT_3_Y 190
 #endif
 
 /**
